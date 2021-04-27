@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "ecommerce",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authecommerce69fa4589",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-ecommerce-dev-101109-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/dab561bc0a5fe87ba1fb25255f56026fe05d4de0"
+}
